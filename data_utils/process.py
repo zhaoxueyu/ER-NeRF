@@ -349,7 +349,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('path', type=str, help="path to video file")
     parser.add_argument('--task', type=int, default=-1, help="-1 means all")
-    parser.add_argument('--outpath', type=int, default=None, help="")
+    parser.add_argument('--outpath', type=str, default=None, help="")
     parser.add_argument('--asr', type=str, default='deepspeech', help="wav2vec or deepspeech")
 
     opt = parser.parse_args()
